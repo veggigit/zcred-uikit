@@ -1,0 +1,213 @@
+button {
+    all: unset;
+}
+
+._button-base {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+    &:active {
+        -webkit-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.59);
+        box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.59);
+    }
+
+    &:disabled,
+    &._disabled {
+        opacity: .3;
+        cursor: not-allowed !important;
+        /* pointer-events: none; */
+    }
+
+    &._with-icon {
+        display: inline-flex;
+        gap: .5rem;
+        align-content: center;
+
+        & .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 34;
+        }
+    }
+}
+
+/*  outline */
+._button-outline-z1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z1));
+    color: hsl(var(--color-z1));
+
+    &:hover {
+        background-color: hsl(var(--color-z1));
+        color: white;
+    }
+}
+
+._button-outline-z2 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z2));
+    color: hsl(var(--color-z2));
+
+    &:hover {
+        background-color: hsl(var(--color-z2));
+        color: white;
+    }
+}
+
+._button-outline-z3 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z3));
+    color: hsl(var(--color-z3));
+
+    &:hover {
+        background-color: hsl(var(--color-z3));
+        color: white;
+    }
+}
+
+._button-outline-z4 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z4));
+    color: hsl(var(--color-z4));
+
+    &:hover {
+        background-color: hsl(var(--color-z4));
+        color: white;
+    }
+}
+
+._button-outline-z5 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z5));
+    color: hsl(var(--color-z5));
+
+    &:hover {
+        background-color: hsl(var(--color-z5));
+        color: white;
+    }
+}
+
+._button-outline-z6 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z6));
+    color: hsl(var(--color-z6));
+
+    &:hover {
+        background-color: hsl(var(--color-z6));
+        color: white;
+    }
+}
+
+._button-outline-z7 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z7));
+    color: hsl(var(--color-z7));
+
+    &:hover {
+        background-color: hsl(var(--color-z7));
+        color: white;
+    }
+}
+
+._button-outline-z8 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(var(--color-z8));
+    color: hsl(var(--color-z8));
+
+    &:hover {
+        background-color: hsl(var(--color-z8));
+        color: white;
+    }
+}
+
+/* fill */
+._button-fill-z1 {
+    background: hsl(var(--color-z1));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z1-dark));
+    }
+}
+
+._button-fill-z2 {
+    background: hsl(var(--color-z2));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z2-dark));
+    }
+}
+
+._button-fill-z3 {
+    background: hsl(var(--color-z3));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z3-dark));
+    }
+}
+
+._button-fill-z4 {
+    background: hsl(var(--color-z4));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z4-dark));
+    }
+}
+
+._button-fill-z5 {
+    background: hsl(var(--color-z5));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z5-dark));
+    }
+}
+
+._button-fill-z6 {
+    background: hsl(var(--color-z6));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z6-dark));
+    }
+}
+
+._button-fill-z7 {
+    background: hsl(var(--color-z7));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z7-dark));
+    }
+}
+
+._button-fill-z8 {
+    background: hsl(var(--color-z8));
+    color: white;
+
+    &:hover {
+        background: hsl(var(--color-z8-dark));
+    }
+}
+
+/* ._button-fill-white {
+    background: white;
+    color: hsl(var(--color-z1));
+
+    &:hover {
+        background: hsl(var(--color-z1-dark));
+    }
+} */
