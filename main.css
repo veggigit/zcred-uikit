@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import './normalize.css';
 @import './buttons.css';
+@import './modal.css';
 
 :root {
     /* colores */
@@ -21,8 +23,9 @@
     --color-z8: 208 81 96;
     --color-z8-dark: 208 81 86;
     --color-font: 0 0 22;
+    /* commons */
+    --border-radius: .5rem;
 }
-
 
 body {
     font-family: "DM Sans", sans-serif;

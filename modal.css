@@ -1,0 +1,109 @@
+._modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 35;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    --card-modal-max-width: 1000px;
+
+    &._modal-enabled {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &._modal-disabled {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &::after {
+        content: '';
+        background: hsl(0 0 0 / .6);
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    & ._modal-content-scroll {
+        height: 100vh;
+        overflow-y: scroll;
+        display: grid;
+        place-items: center;
+        padding: .2rem;
+        width: 100%;
+    }
+
+    & ._card {
+        width: 100%;
+        height: auto;
+        max-width: var(--card-modal-max-width);
+        min-width: unset;
+        position: relative;
+        background: white;
+        border-radius: var(--border-radius);
+        padding: 2rem 1rem 1.6rem;
+        box-sizing: border-box;
+
+        & ._close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: inline-block;
+            cursor: pointer;
+
+            & img {
+                filter: invert(17%) sepia(0%) saturate(685%) hue-rotate(236deg) brightness(103%) contrast(8%);
+            }
+
+            & span {
+                color: var(--color-z0);
+            }
+        }
+
+        & p {
+            color: var(--color-z0);
+        }
+
+        & ._title-modal-card {
+            font-size: 2rem;
+            font-weight: bold;
+            color: hsl(var(--color-z5));
+            position: relative;
+            line-height: 1;
+            margin-bottom: 2.5rem;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                position: absolute;
+                height: 1px;
+                background: hsla(var(--color-z5) /.3);
+                bottom: -1rem;
+            }
+        }
+    }
+
+    @media(min-width: 1024px) {
+
+        & ._card {
+            padding: 2.5rem;
+
+            & ._title-modal-card {
+                font-size: 2.25rem;
+                font-weight: bold;
+                color: hsl(var(--color-z5));
+                position: relative;
+                line-height: 1;
+            }
+        }
+    }
+}
