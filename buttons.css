@@ -25,7 +25,7 @@ button {
     &._with-icon {
         display: inline-flex;
         gap: .5rem;
-        align-content: center;
+        align-items: center;
 
         & .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 34;
