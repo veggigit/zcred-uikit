@@ -80,6 +80,7 @@
     --border-radius: .5rem;
 }
 
+/* LOS SIGUIENTES ESTILOS NO SON RELEVANTES. SOLAMENTE RESPONDEN AL ORDEN DE LOS MÓDULOS */
 body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -97,4 +98,27 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+section {
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+section:first-of-type {
+    padding-top: 0;
+}
+
+section:last-of-type {
+    padding-bottom: 0;
+    border-bottom: unset;
+}
+
+section>div {
+    padding-bottom: 1rem;
+}
+
+section>div:last-of-type {
+    padding-bottom: 0;
 }
