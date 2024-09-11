@@ -31,6 +31,121 @@
         }
     }
 
+    &._with-icon-data {
+        --content-card-gap: 1rem;
+
+        & ._circle-icon {
+            display: grid;
+            place-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: .5rem;
+            border-radius: 50%;
+        }
+
+        & ._card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: .8rem;
+        }
+
+        & ._title-prop {
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
+        & ._content {
+            display: flex;
+            gap: var(--content-card-gap);
+            align-items: center;
+        }
+
+        & ._cant {
+            font-size: 4rem;
+            line-height: 1;
+            font-weight: bold;
+        }
+
+        & ._detail {
+            & p {
+                color: hsl(var(--color-font));
+                font-size: 1rem;
+                text-transform: capitalize;
+                margin: 0;
+            }
+
+            & span {
+                font-weight: 600;
+                font-size: 1rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+
+        &._card-blue {
+            background: hsl(var(--color-z7-h) var(--color-z7-s) 95%);
+            border: 1px solid hsl(var(--color-z7));
+
+            & ._title-prop {
+                color: hsl(var(--color-z7));
+            }
+
+            & ._cant {
+                color: hsl(var(--color-z7));
+            }
+
+            & ._detail {
+                border-left: 1px solid hsl(var(--color-z7));
+                padding-left: var(--content-card-gap);
+
+                & span {
+                    color: hsl(var(--color-z7));
+                }
+            }
+
+            & .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 300,
+                    'GRAD' 0,
+                    'opsz' 34;
+                color: hsl(var(--color-z7));
+            }
+        }
+
+        &._card-salmon {
+            background: hsl(var(--color-z1-h) var(--color-z1-s) 95%);
+            border: 1px solid hsl(var(--color-z1));
+
+            & ._title-prop {
+                color: hsl(var(--color-z1));
+            }
+
+            & ._cant {
+                color: hsl(var(--color-z1));
+            }
+
+            & ._detail {
+                border-left: 1px solid hsl(var(--color-z1));
+                padding-left: var(--content-card-gap);
+
+                & span {
+                    color: hsl(var(--color-z1));
+                }
+            }
+
+            & .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 300,
+                    'GRAD' 0,
+                    'opsz' 34;
+                color: hsl(var(--color-z1));
+            }
+        }
+    }
+
     &._with-image {
 
         & img {
