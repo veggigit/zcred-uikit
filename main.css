@@ -2,25 +2,30 @@
 @import './normalize.css';
 @import './buttons.css';
 @import './modal.css';
+@import './alerts.css';
+@import './cards.css';
 
 :root {
     /* colores */
     --color-z0: 0 0 22;
     --color-z1: 357 87 64;
-    --color-z1-dark: 357 87 54;
     --color-z2: 335 82 41;
-    --color-z2-dark: 335 82 31;
     --color-z3: 262 15 48;
-    --color-z3-dark: 262 15 38;
     --color-z4: 317 100 24;
-    --color-z4-dark: 317 100 14;
     --color-z5: 223 21 32;
-    --color-z5-dark: 223 21 22;
     --color-z6: 209 20 58;
-    --color-z6-dark: 209 20 48;
     --color-z7: 205 92 41;
-    --color-z7-dark: 205 92 31;
     --color-z8: 208 81 96;
+    --color-danger: 357 87 64;
+    --color-warning: 24 92 51;
+    --color-success: 151 98 29;
+    --color-z1-dark: 357 87 54;
+    --color-z2-dark: 335 82 31;
+    --color-z3-dark: 262 15 38;
+    --color-z4-dark: 317 100 14;
+    --color-z5-dark: 223 21 22;
+    --color-z6-dark: 209 20 48;
+    --color-z7-dark: 205 92 31;
     --color-z8-dark: 208 81 86;
     --color-font: 0 0 22;
     /* commons */
@@ -31,9 +36,17 @@ body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding: 1.5rem 3rem;
 }
 
 ._items {
     display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+._items-blocks {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }

@@ -202,12 +202,3 @@ button {
         background: hsl(var(--color-z8-dark));
     }
 }
-
-/* ._button-fill-white {
-    background: white;
-    color: hsl(var(--color-z1));
-
-    &:hover {
-        background: hsl(var(--color-z1-dark));
-    }
-} */
