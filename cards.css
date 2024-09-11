@@ -20,6 +20,17 @@
         display: block;
     }
 
+    &._with-chart {
+        & ._title {
+            text-transform: uppercase !important;
+        }
+
+        & ._container-chart {
+            width: 100% !important;
+            display: block;
+        }
+    }
+
     &._with-image {
 
         & img {
