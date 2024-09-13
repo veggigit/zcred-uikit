@@ -4,6 +4,7 @@
 @import './modal.css';
 @import './alerts.css';
 @import './cards.css';
+@import './tables.css';
 
 :root {
     /* Receta --color-z0 */
