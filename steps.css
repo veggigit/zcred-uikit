@@ -6,7 +6,7 @@
     --step-size: 30px;
     --space-between-step: 50px;
     --size-step-index: .8rem;
-    --font-size-step-excerpt: 0;
+    --font-size-step-excerpt: .8rem;
     --space-excerpt-between-crcle: 1rem;
     min-height: calc(var(--step-size) + var(--space-excerpt-between-crcle) + var(--font-size-step-excerpt));
     width: max-content;
@@ -124,7 +124,7 @@
     --step-size: 30px;
     --space-between-step: 50px;
     --size-step-index: .8rem;
-    --font-size-step-excerpt: 0;
+    --font-size-step-excerpt: .8rem;
     --space-excerpt-between-crcle: 1rem;
     --max-width-excerpt-box: 100px;
     width: calc(var(--step-size) + var(--space-excerpt-between-crcle) + var(--max-width-excerpt-box));
