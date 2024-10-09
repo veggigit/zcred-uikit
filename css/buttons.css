@@ -12,7 +12,6 @@ button {
     align-items: center;
     justify-content: center;
 
-
     &:active {
         -webkit-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.59);
         -moz-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.59);
@@ -32,6 +31,10 @@ button {
         & .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 34;
         }
+    }
+
+    &._rest-bgwhite{
+        background-color: white;
     }
 }
 
