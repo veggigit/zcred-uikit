@@ -1,0 +1,37 @@
+footer._footer-dark-blue {
+    color: white;
+    padding: 2.3rem 0;
+    background: hsl(var(--color-z5));
+
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    & ul._rrss {
+        display: flex;
+        gap: 1.6rem;
+        margin: 0 auto;
+        color: white;
+        justify-content: center;
+
+        & img._icon {
+            width: 1.8rem;
+            aspect-ratio: 1;
+        }
+    }
+
+    & p._rights {
+        margin-top: .8rem;
+        text-align: center;
+    }
+
+    @media(min-width: 768px) {
+
+        & ul._rrss {
+            & img._icon {
+                width: 2.125rem;
+            }
+        }
+    }
+}
