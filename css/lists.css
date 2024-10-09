@@ -1,0 +1,33 @@
+ul._list-checks {
+    --fontSizeListChecks: 1rem;
+    font-size: var(--fontSizeListChecks);
+    margin-bottom: 1rem;
+    color: hsl(var(--color-z0));
+    display: grid;
+    gap: 1rem;
+    padding-left: 0;
+
+    & li {
+        display: flex;
+        gap: .5rem;
+        align-items: flex-start;
+
+        & span {
+            padding: .2rem;
+            border-radius: 50%;
+            background-color: #ECF5FD;
+            color: hsl(var(--color-z1));
+            font-size: var(--fontSizeListChecks);
+        }
+    }
+
+    @media(min-width: 1024px) {
+        & {
+            --fontSizeListChecks: 1.125rem;
+        }
+    }
+}
+
+ul._list-checks-md {
+    --fontSizeListChecks: 1.25rem;
+}
