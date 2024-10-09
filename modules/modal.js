@@ -38,4 +38,6 @@ class handleModal {
     }
 }
 
-new handleModal('._unique-modal', '._unique-launch-modal');
+window.handleModal = handleModal;
+
+// new handleModal('._unique-modal', '._unique-launch-modal');
