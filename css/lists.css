@@ -1,4 +1,4 @@
-ul._list-checks {
+ul._list-checked {
     --fontSizeListChecks: 1rem;
     font-size: var(--fontSizeListChecks);
     margin-bottom: 1rem;
@@ -28,6 +28,6 @@ ul._list-checks {
     }
 }
 
-ul._list-checks-md {
+ul._list-checked-md {
     --fontSizeListChecks: 1.25rem;
 }
