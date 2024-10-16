@@ -2,21 +2,21 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     css: {
-        minify: true, // Esta opción está habilitada por defecto en modo producción.
+        minify: true, // Minificación CSS activada por defecto en modo producción
     },
     build: {
-        // Opcional: Configura la salida si quieres cambiar la ubicación o nombre del archivo
         outDir: 'dist',
         rollupOptions: {
+            // input: './css/main.css',
             output: {
                 assetFileNames: (assetInfo) => {
-                    // Comprueba el nombre real del archivo CSS
-                    if (assetInfo.name.endsWith('.css')) {
-                        return 'css/zcred-uikit_min.css'; // Cambia el nombre aquí
+                    // Verifica si es un archivo CSS y asigna el nombre personalizado
+                    if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+                        return 'css/zcred-uikit.min.css';
                     }
-                    return assetInfo.name; // Mantiene el nombre original para otros archivos
+                    return assetInfo.name; // Mantén el nombre original para otros activos
                 },
-            }
+            },
         },
     },
 });

@@ -49,16 +49,17 @@
             padding-bottom: 0;
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/css/zcred-uikit_min.css">
+  <link rel="stylesheet" crossorigin href="/css/zcred-uikit.min.css">
 </head>
 
 <body>
     <header style="margin-bottom: 2rem;">
         <div style="display:flex; gap: 2rem; justify-content: space-between; align-items: center;">
             <h1 style="margin: 0;">UI Kit para empresa zcred.app</h1>
-            <span style="font-weight: 600;">v1.2</span>
+            <span style="font-weight: 600;">v1.3</span>
         </div>
         <p>Puedes ver el repositorio <a href="https://github.com/veggigit/zcred-uikit" target="_blank">aquí</a></p>
+        <p>CDN css <a href="https://cdn.jsdelivr.net/gh/veggigit/zcred-uikit@master/dist/css/zcred-uikit_min.css" target="_blank">https://cdn.jsdelivr.net/gh/veggigit/zcred-uikit@master/dist/css/zcred-uikit_min.css</a></p>
     </header>
     <section>
         <h2>Botones</h2>
@@ -877,9 +878,32 @@
             </footer>
         </div>
     </section>
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+        <div>
+            <p>Defaul</p>
+            <div class="_items-blocks _stack-faqs">
+                <article class="_faq-item _expanded">
+                    <span class="_icon material-symbols-outlined">add_circle</span>
+                    <span class="_icon material-symbols-outlined">do_not_disturb_on</span>
+                    <h3 class="_que">¿Qué es timeout?</h3>
+                    <p class="_ans">El <strong>timeout</strong> en una pasarela de compra es el tiempo límite que un cliente tiene para completar el pago. Si no se finaliza la transacción en ese plazo, la operación se cancela automáticamente para evitar fraudes y proteger la información del cliente.</p>
+                </article>
+
+                <article class="_faq-item">
+                    <span class="_icon material-symbols-outlined">add_circle</span>
+                    <span class="_icon material-symbols-outlined">do_not_disturb_on</span>
+                    <h3 class="_que">¿Puedo retomar mi compra?</h3>
+                    <p class="_ans">Sí, puedes retomar tu compra si experimentaste un timeout. En Zcred, <strong>te enviamos un link por correo electrónico</strong> para que puedas continuar desde donde lo dejaste sin perder ningún detalle. Solo haz clic en el enlace y serás redirigido a tu carrito para completar la transacción de forma rápida y segura.</p>
+                </article>
+            </div>
+        </div>
+    </section>
     <script src="./modules/modal.js"></script>
+    <script src="./modules/stackFaqs.js"></script>
     <script>
         new handleModal('._unique-modal', '._unique-launch-modal');
+        new stackFaqs('._stack-faqs');
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
