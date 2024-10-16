@@ -12,7 +12,7 @@ export default defineConfig({
                 assetFileNames: (assetInfo) => {
                     // Verifica si es un archivo CSS y asigna el nombre personalizado
                     if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-                        return 'css/zcred-uikit.min.css';
+                        return 'css/zcred-uikit_min.css'; // IMPORTANTE, ya en producción
                     }
                     return assetInfo.name; // Mantén el nombre original para otros activos
                 },
