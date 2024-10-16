@@ -56,10 +56,10 @@
     <header style="margin-bottom: 2rem;">
         <div style="display:flex; gap: 2rem; justify-content: space-between; align-items: center;">
             <h1 style="margin: 0;">UI Kit para empresa zcred.app</h1>
-            <span style="font-weight: 600;">v1.3</span>
+            <span class="_version-tag" style="font-weight: 600;"></span>
         </div>
         <p>Puedes ver el repositorio <a href="https://github.com/veggigit/zcred-uikit" target="_blank">aquí</a></p>
-        <p>CDN css <a href="https://cdn.jsdelivr.net/gh/veggigit/zcred-uikit@master/dist/css/zcred-uikit_min.css" target="_blank">https://cdn.jsdelivr.net/gh/veggigit/zcred-uikit@master/dist/css/zcred-uikit_min.css</a></p>
+        <p>CDN css <a class="_url_cdn_css" href="" target="_blank"></a></p>
     </header>
     <section>
         <h2>Botones</h2>
@@ -953,6 +953,16 @@
                     hoverOffset: 4
                 }]
             }
+        });
+    </script>
+    <script>
+        // version last commit tag. For jsdelivr refresh
+        document.addEventListener('DOMContentLoaded', (eve) => {
+            const cdnversion = 'v1.4';
+            const urlcsscdn = `https://cdn.jsdelivr.net/gh/veggigit/zcred-uikit@${cdnversion}/dist/css/zcred-uikit_min.css`;
+            document.querySelector('._url_cdn_css').href = urlcsscdn;
+            document.querySelector('._url_cdn_css').innerHTML = urlcsscdn;
+            document.querySelector('._version-tag').innerHTML = cdnversion;
         });
     </script>
 </body>
