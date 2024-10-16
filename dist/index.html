@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcred uikit</title>
+    <style>
+        /* LOS SIGUIENTES ESTILOS NO SON RELEVANTES. SOLAMENTE RESPONDEN AL ORDEN DE LOS MÓDULOS */
+        body {
+            font-family: "DM Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            padding: 1.5rem 3rem;
+        }
+
+        ._items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        ._items-blocks {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        section {
+            padding-bottom: 3rem;
+            padding-top: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        section:first-of-type {
+            padding-top: 0;
+        }
+
+        section:last-of-type {
+            padding-bottom: 0;
+            border-bottom: unset;
+        }
+
+        section>div {
+            padding-bottom: 1rem;
+        }
+
+        section>div:last-of-type {
+            padding-bottom: 0;
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/css/zcred-uikit_min.css">
+</head>
+
+<body>
+    <header style="margin-bottom: 2rem;">
+        <div style="display:flex; gap: 2rem; justify-content: space-between; align-items: center;">
+            <h1 style="margin: 0;">UI Kit para empresa zcred.app</h1>
+            <span style="font-weight: 600;">v1.2</span>
+        </div>
+        <p>Puedes ver el repositorio <a href="https://github.com/veggigit/zcred-uikit" target="_blank">aquí</a></p>
+    </header>
+    <section>
+        <h2>Botones</h2>
+        <div>
+            <p>Outline default</p>
+            <div class="_items">
+                <button class="_button-base _button-outline-z1">button zcred uikit</button>
+                <a href="#" class="_button-base _button-outline-z2">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z3">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z4">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z5">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z6">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z7">button zcred uikit</a>
+                <button class="_button-base _button-outline-z8">button zcred uikit</button>
+                <a href="#" class="_button-base _button-outline-success">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-warning">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-danger">button zcred uikit</a>
+            </div>
+        </div>
+        <div>
+            <p>Outline disabled</p>
+            <div class="_items">
+                <a href="#" class="_button-base _button-outline-z1 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z2 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z3 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z4 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z5 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z6 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-z7 _disabled">button zcred uikit</a>
+                <button class="_button-base _button-outline-z8 _disabled">button zcred uikit</button>
+                <a href="#" class="_button-base _button-outline-success _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-warning _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-outline-danger _disabled">button zcred uikit</a>
+            </div>
+        </div>
+        <div>
+            <p>Outline icon</p>
+            <div class="_items">
+                <a class="_button-base _button-outline-z1 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z2 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z3 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z4 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z5 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z6 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z7 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-outline-z8 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a href="#" class="_button-base _button-outline-success _with-icon">button zcred uikit
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                </a>
+                <a href="#" class="_button-base _button-outline-warning _with-icon">button zcred uikit
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                </a>
+                <a href="#" class="_button-base _button-outline-danger _with-icon">button zcred uikit
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                </a>
+            </div>
+        </div>
+        <div>
+            <p>Filled default</p>
+            <div class="_items">
+                <a href="#" class="_button-base _button-fill-z1">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z2">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z3">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z4">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z5">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z6">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z7">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z8">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-success">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-danger">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-warning">button zcred uikit</a>
+            </div>
+        </div>
+        <div>
+            <p>Filled disabled</p>
+            <div class="_items">
+                <a href="#" class="_button-base _button-fill-z1 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z2 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z3 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z4 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z5 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z6 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z7 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-z8 _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-success _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-danger _disabled">button zcred uikit</a>
+                <a href="#" class="_button-base _button-fill-warning _disabled">button zcred uikit</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Filled icon</p>
+            <div class="_items">
+                <a class="_button-base _button-fill-z1 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z2 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z3 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z4 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z5 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z6 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z7 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-z8 _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-success _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-danger _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+                <a class="_button-base _button-fill-warning _with-icon">button zcred uikit <span
+                        class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Modal</h2>
+        <div>
+            <p>Default</p>
+            <!-- launcher -->
+            <a href="#" class="_button-base _button-fill-z1 _unique-launch-modal">launch modal</a>
+            <!-- Modal -->
+            <div class="_unique-modal _modal _modal-disabled">
+                <div class="_modal-content-scroll">
+                    <div class="_card">
+                        <span class="_close-modal">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </span>
+                        <h2 class="_title-modal-card">Título contenido modal</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure mollitia quia deserunt
+                            id! Explicabo iusto autem laborum harum ipsum reprehenderit omnis? Alias magnam explicabo
+                            dignissimos dolore incidunt ipsum. Magni! Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Nihil unde fuga quia amet consequatur! Non adipisci ipsa odio nulla
+                            corporis neque, suscipit laboriosam dolores blanditiis sed repudiandae voluptas deleniti
+                            natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus
+                            exercitationem voluptatem nobis esse maxime dolorum sed qui nisi fugit, ad voluptas id in
+                            earum aut quas assumenda dignissimos incidunt? Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Odit molestiae sint aliquid repudiandae voluptate nulla expedita, numquam
+                            sed blanditiis ipsum eligendi itaque, porro, earum veritatis veniam doloribus. Inventore,
+                            quibusdam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi
+                            enim obcaecati sunt neque cum consequatur? Deleniti omnis rerum, iusto quas amet aliquid eum
+                            minus. Nemo totam optio corrupti enim. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rerum corporis labore sit illo aspernatur. Iste exercitationem repudiandae temporibus
+                            distinctio fuga, molestias dignissimos autem veritatis ipsum dolor magni et iusto est. Lorem
+                            ipsum dolor sit, amet consectetur adipisicing elit. Veniam molestias, aut iure voluptas
+                            vitae vero possimus reiciendis! Voluptate est quidem maiores, praesentium assumenda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Alertas</h2>
+        <div>
+            <p>Filled icon</p>
+            <div class="_items-blocks">
+                <div class="_alert-base _with-icon _filled-color-warning">
+                    <span class="material-symbols-outlined">warning</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _filled-color-success">
+                    <span class="material-symbols-outlined">check</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _filled-color-danger">
+                    <span class="material-symbols-outlined">cancel</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _filled-color-info">
+                    <span class="material-symbols-outlined">info</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Filled</p>
+            <div class="_items-blocks">
+                <div class="_alert-base _filled-color-warning">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _filled-color-success">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _filled-color-danger">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _filled-color-info">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Outline icon</p>
+            <div class="_items-blocks">
+                <div class="_alert-base _with-icon _outline-color-warning">
+                    <span class="material-symbols-outlined">warning</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _outline-color-success">
+                    <span class="material-symbols-outlined">check</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _outline-color-danger">
+                    <span class="material-symbols-outlined">cancel</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _with-icon _outline-color-info">
+                    <span class="material-symbols-outlined">info</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>Outline</p>
+            <div class="_items-blocks">
+                <div class="_alert-base _outline-color-warning">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _outline-color-success">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _outline-color-danger">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+                <div class="_alert-base _outline-color-info">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet qui voluptatum pariatur
+                        molestias
+                        fugit. Culpa magni necessitatibus quisquam, laboriosam eaque dignissimos in, nihil quidem
+                        repudiandae reiciendis exercitationem ipsa maiores vero! Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Minima nobis repellendus maxime, velit ut excepturi magnam, illo modi dolores
+                        odio
+                        totam earum fuga delectus minus non reprehenderit quod. Incidunt, necessitatibus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Cards</h2>
+        <div>
+            <p>Card default</p>
+            <div class="_items">
+                <article class="_card-base">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-outline-z1">button zcred uikit</button>
+                </article>
+                <article class="_card-base">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-fill-z1">button zcred uikit</button>
+                </article>
+                <article class="_card-base">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-fill-z7">button zcred uikit</button>
+                </article>
+            </div>
+        </div>
+        <div>
+            <p>Card con imagen</p>
+            <div class="_items">
+                <article class="_card-base _with-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-outline-z1">button zcred uikit</button>
+                </article>
+                <article class="_card-base _with-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-outline-z5">button zcred uikit</button>
+                </article>
+                <article class="_card-base _with-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-outline-z7">button zcred uikit</button>
+                </article>
+            </div>
+        </div>
+        <div>
+            <p>Card total imagen</p>
+            <div class="_items">
+                <article class="_card-base _total-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-outline-z1">button zcred uikit</button>
+                </article>
+                <article class="_card-base _total-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-fill-z2">button zcred uikit</button>
+                </article>
+                <article class="_card-base _total-image">
+                    <img src="/vision_image.png" alt="card title">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <p class="_excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus minima
+                        fugit dolor exercitationem consequuntur deserunt, quibusdam nemo error iste quod cupiditate
+                        repellendus maiores dicta ipsam quos mollitia eligendi consequatur.</p>
+                    <button class="_button-base _button-fill-z4">button zcred uikit</button>
+                </article>
+            </div>
+        </div>
+        <div>
+            <p>Card con gráficos</p>
+            <div class="_items">
+                <div class="_card-base _with-chart">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <div class="_container-chart">
+                        <canvas id="unique-chart-id1"></canvas>
+                    </div>
+                </div>
+                <div class="_card-base _with-chart">
+                    <h1 class="_title">Lorem ipsum dolor sit amet</h1>
+                    <div class="_container-chart">
+                        <canvas id="unique-chart-id2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Card con datos iconos</p>
+            <div class="_items">
+                <article class="_card-base _with-icon-data _card-blue">
+                    <div class="_card-header">
+                        <div class="_circle-icon">
+                            <span class="material-symbols-outlined">apartment</span>
+                        </div>
+                        <h1 class="_title-prop">Departamentos</h1>
+                    </div>
+                    <div class="_content">
+                        <span class="_cant">10</span>
+                        <div class="_detail">
+                            <p>Avaluo fiscal</p>
+                            <span>33MM</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="_card-base _with-icon-data _card-salmon">
+                    <div class="_card-header">
+                        <div class="_circle-icon">
+                            <span class="material-symbols-outlined">filter_hdr</span>
+                        </div>
+                        <h1 class="_title-prop">Sitios</h1>
+                    </div>
+                    <div class="_content">
+                        <span class="_cant">10</span>
+                        <div class="_detail">
+                            <p>Avaluo fiscal</p>
+                            <span>33MM</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Tables</h2>
+        <div>
+            <p>Default</p>
+            <div class="_table-container-overflow-hidden">
+                <div class="_table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="">#</th>
+                                <th class="">razón social</th>
+                                <th class="">r.u.t</th>
+                                <th class="">fecha de incorporación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#</td>
+                                <td>Pepsico Iberia Servicios Centrales, S.L.</td>
+                                <td>76.598.474-0</td>
+                                <td>20/03/2002</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>Pepsico Iberia Servicios Centrales, S.L.</td>
+                                <td>76.598.474-0</td>
+                                <td>20/03/2002</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>Pepsico Iberia Servicios Centrales, S.L.</td>
+                                <td>76.598.474-0</td>
+                                <td>20/03/2002</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Steps</h2>
+        <div>
+            <p>Horizontal</p>
+            <div class="_steps-container-hotizontal">
+                <ul class="_steps">
+                    <li class="_step _active">
+                        <i>1</i>
+                        <p>Paso 1</p>
+                    </li>
+                    <li class="_step">
+                        <i>2</i>
+                        <p>Paso 2</p>
+                    </li>
+                    <li class="_step">
+                        <i>3</i>
+                        <p>Paso 3</p>
+                    </li>
+                    <li class="_step">
+                        <i>4</i>
+                        <p>Paso 4</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>Vertical</p>
+            <div class="_steps-container-vertical">
+                <ul class="_steps">
+                    <li class="_step _active">
+                        <i>1</i>
+                        <p>Paso 1 Lorem ipsum dolor, sit amet</p>
+                    </li>
+                    <li class="_step">
+                        <i>2</i>
+                        <p>Paso 2</p>
+                    </li>
+                    <li class="_step">
+                        <i>3</i>
+                        <p>Paso 3</p>
+                    </li>
+                    <li class="_step">
+                        <i>4</i>
+                        <p>Paso 4</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Lists</h2>
+        <div>
+            <p>Default</p>
+            <ul class="_list-checked">
+                <li>
+                    <span class="material-symbols-outlined">
+                        check
+                    </span>
+                    holaa
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        check
+                    </span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, perspiciatis? Velit tempore dolore repellendus, eum dignissimos a sunt, quaerat atque eos quam magnam, adipisci repellat. Totam debitis dolorem fuga harum!
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        check
+                    </span>
+                    holaa
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Headers</h2>
+        <div>
+            <p>Simple white</p>
+            <header class="_simple-header">
+                <div class="_container">
+                    <img class="_brand-s" src="/brand-less_iso.svg" alt="zcred">
+                    <ul class="_nav">
+                        <li class="_back"><a href="/">
+                                <span class="material-symbols-outlined">
+                                    reply
+                                </span>
+                                <span>Volver</span>
+                            </a>
+                        </li>
+                        <li class="_logout"><a href="/logout">
+                                <div class="_avatar">EC</div>
+                                <span>Logout</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section>
+        <h2>Footers</h2>
+        <div>
+            <p>Dark blue</p>
+            <footer class="_footer-dark-blue">
+                <div class="_container">
+                    <ul class="_rrss">
+                        <li>
+                            <a href="#">
+                                <img class="_icon" src="data:image/svg+xml,%3csvg%20width='34'%20height='34'%20viewBox='0%200%2034%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_3512_3)'%3e%3cpath%20d='M34%2017.1041C34%207.65755%2026.3892%200%2017.0021%200C7.61079%200.00212474%200%207.65755%200%2017.1063C0%2025.6413%206.21697%2032.7166%2014.342%2034V22.0484H10.0287V17.1063H14.3463V13.3348C14.3463%209.04925%2016.8853%206.68229%2020.7672%206.68229C22.6285%206.68229%2024.5726%207.01587%2024.5726%207.01587V11.2228H22.4287C20.3188%2011.2228%2019.6602%2012.5423%2019.6602%2013.8958V17.1041H24.3729L23.6207%2022.0463H19.658V33.9979C27.7831%2032.7145%2034%2025.6392%2034%2017.1041Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_3512_3'%3e%3crect%20width='34'%20height='34'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="_icon" src="data:image/svg+xml,%3csvg%20width='29'%20height='30'%20viewBox='0%200%2029%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_3512_7)'%3e%3cpath%20d='M0%202.14875C0%200.961873%200.953375%200%202.12969%200H26.8703C28.0466%200%2029%200.961873%2029%202.14875V27.8513C29%2029.0381%2028.0466%2030%2026.8703%2030H2.12969C0.953375%2030%200%2029.0381%200%2027.8513V2.14875ZM8.95919%2025.1137V11.5669H4.60738V25.1137H8.95919ZM6.78419%209.71627C8.30125%209.71627%209.24556%208.6775%209.24556%207.37626C9.21837%206.04687%208.30306%205.03625%206.81319%205.03625C5.32331%205.03625%204.35%206.04875%204.35%207.37626C4.35%208.6775%205.29431%209.71627%206.75519%209.71627H6.78419ZM15.6799%2025.1137V17.5481C15.6799%2017.1431%2015.7089%2016.7381%2015.8249%2016.4494C16.1385%2015.6413%2016.8544%2014.8031%2018.0579%2014.8031C19.633%2014.8031%2020.2619%2016.0444%2020.2619%2017.8669V25.1137H24.6138V17.3437C24.6138%2013.1813%2022.4678%2011.2463%2019.604%2011.2463C17.2949%2011.2463%2016.2599%2012.5587%2015.6799%2013.4831V13.53H15.6509C15.6605%2013.5144%2015.6702%2013.4987%2015.6799%2013.4831V11.5669H11.3299C11.3843%2012.8381%2011.3299%2025.1137%2011.3299%2025.1137H15.6799Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_3512_7'%3e%3crect%20width='29'%20height='30'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="_icon" src="data:image/svg+xml,%3csvg%20width='34'%20height='34'%20viewBox='0%200%2034%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_3512_5)'%3e%3cpath%20d='M17%200C12.3866%200%2011.8065%200.02125%209.99386%200.102C8.18125%200.187%206.94663%200.47175%205.865%200.8925C4.73045%201.31924%203.70279%201.98863%202.85387%202.85387C1.98917%203.70323%201.31985%204.73076%200.8925%205.865C0.47175%206.9445%200.184875%208.18126%200.102%209.98745C0.02125%2011.8044%200%2012.3824%200%2017.0021C0%2021.6176%200.02125%2022.1956%200.102%2024.0083C0.187%2025.8187%200.47175%2027.0534%200.8925%2028.135C1.32813%2029.2527%201.90825%2030.2005%202.85387%2031.1461C3.79737%2032.0917%204.74513%2032.674%205.86287%2033.1075C6.94663%2033.5283%208.17913%2033.8151%209.98959%2033.898C11.8044%2033.9787%2012.3824%2034%2017%2034C21.6176%2034%2022.1935%2033.9787%2024.0083%2033.898C25.8166%2033.813%2027.0555%2033.5283%2028.1371%2033.1075C29.271%2032.6805%2030.2979%2032.0112%2031.1461%2031.1461C32.0917%2030.2005%2032.6719%2029.2527%2033.1075%2028.135C33.5261%2027.0534%2033.813%2025.8187%2033.898%2024.0083C33.9787%2022.1956%2034%2021.6176%2034%2017C34%2012.3824%2033.9787%2011.8044%2033.898%209.98959C33.813%208.18125%2033.5261%206.9445%2033.1075%205.865C32.6802%204.73073%2032.0109%203.70318%2031.1461%202.85387C30.2975%201.98831%2029.2697%201.31887%2028.135%200.8925C27.0513%200.47175%2025.8145%200.184875%2024.0061%200.102C22.1914%200.02125%2021.6155%200%2016.9957%200H17.0021H17ZM15.4764%203.06425H17.0021C21.5411%203.06425%2022.0787%203.07913%2023.8701%203.162C25.5276%203.23637%2026.4286%203.51475%2027.0279%203.74637C27.8205%204.0545%2028.3879%204.42425%2028.9829%205.01925C29.5779%205.61425%2029.9455%206.1795%2030.2536%206.97425C30.4874%207.57137%2030.7636%208.47237%2030.838%2010.1299C30.9209%2011.9213%2030.9379%2012.4589%2030.9379%2016.9957C30.9379%2021.5326%2030.9209%2022.0724%2030.838%2023.8637C30.7636%2025.5213%2030.4853%2026.4201%2030.2536%2027.0194C29.9811%2027.7575%2029.5461%2028.425%2028.9807%2028.9723C28.3857%2029.5673%2027.8205%2029.9349%2027.0257%2030.243C26.4307%2030.4767%2025.5297%2030.753%2023.8701%2030.8295C22.0787%2030.9103%2021.5411%2030.9294%2017.0021%2030.9294C12.4631%2030.9294%2011.9234%2030.9103%2010.132%2030.8295C8.4745%2030.753%207.57563%2030.4767%206.97637%2030.243C6.23793%2029.9708%205.56989%2029.5366%205.02137%2028.9723C4.45559%2028.4241%204.01991%2027.756%203.74637%2027.0173C3.51475%2026.4201%203.23637%2025.5191%203.162%2023.8616C3.08125%2022.0703%203.06425%2021.5326%203.06425%2016.9915C3.06425%2012.4525%203.08125%2011.917%203.162%2010.1256C3.2385%208.46813%203.51476%207.56713%203.7485%206.96787C4.05663%206.17525%204.42637%205.60787%205.02137%205.01287C5.61637%204.41787%206.18163%204.05025%206.97637%203.74213C7.57563%203.50837%208.4745%203.23213%2010.132%203.15563C11.7003%203.08337%2012.308%203.06213%2015.4764%203.06V3.06425ZM26.0759%205.88625C25.8079%205.88625%2025.5427%205.93901%2025.2952%206.04154C25.0477%206.14405%2024.8228%206.29432%2024.6334%206.48375C24.444%206.67318%2024.2937%206.89808%2024.1912%207.14558C24.0886%207.39308%2024.0359%207.65835%2024.0359%207.92625C24.0359%208.19415%2024.0886%208.45942%2024.1912%208.70692C24.2937%208.95442%2024.444%209.17932%2024.6334%209.36875C24.8228%209.55818%2025.0477%209.70845%2025.2952%209.81094C25.5427%209.91353%2025.8079%209.96627%2026.0759%209.96627C26.6169%209.96627%2027.1358%209.7513%2027.5183%209.36875C27.901%208.98617%2028.1159%208.46729%2028.1159%207.92625C28.1159%207.38521%2027.901%206.86633%2027.5183%206.48375C27.1358%206.10117%2026.6169%205.88625%2026.0759%205.88625ZM17.0021%208.2705C15.8442%208.25243%2014.6941%208.4649%2013.619%208.89555C12.544%209.32619%2011.5653%209.96637%2010.7401%2010.7789C9.91479%2011.5914%209.25939%2012.56%208.81203%2013.6282C8.36468%2014.6964%208.13429%2015.8429%208.13429%2017.0011C8.13429%2018.1592%208.36468%2019.3057%208.81203%2020.374C9.25939%2021.4421%209.91479%2022.4108%2010.7401%2023.2233C11.5653%2024.0358%2012.544%2024.6759%2013.619%2025.1066C14.6941%2025.5372%2015.8442%2025.7497%2017.0021%2025.7316C19.294%2025.6958%2021.4799%2024.7604%2023.088%2023.1269C24.6962%2021.4935%2025.5975%2019.2933%2025.5975%2017.0011C25.5975%2014.7089%2024.6962%2012.5086%2023.088%2010.8752C21.4799%209.24181%2019.294%208.30626%2017.0021%208.2705ZM17.0021%2011.3326C18.5052%2011.3326%2019.9467%2011.9297%2021.0096%2012.9926C22.0724%2014.0554%2022.6695%2015.4969%2022.6695%2017C22.6695%2018.5031%2022.0724%2019.9446%2021.0096%2021.0074C19.9467%2022.0703%2018.5052%2022.6674%2017.0021%2022.6674C15.499%2022.6674%2014.0575%2022.0703%2012.9947%2021.0074C11.9319%2019.9446%2011.3347%2018.5031%2011.3347%2017C11.3347%2015.4969%2011.9319%2014.0554%2012.9947%2012.9926C14.0575%2011.9297%2015.499%2011.3326%2017.0021%2011.3326Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_3512_5'%3e%3crect%20width='34'%20height='34'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="_rights">Todos los derechos reservados - 2024</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="./modules/modal.js"></script>
+    <script>
+        new handleModal('._unique-modal', '._unique-launch-modal');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const chart1 = document.getElementById('unique-chart-id1');
+        const chart2 = document.getElementById('unique-chart-id2');
+
+        new Chart(chart1, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                responsive: true
+            }
+        });
+
+
+        new Chart(chart2, {
+            type: 'doughnut',
+            options: {
+                responsive: true
+            },
+            data: {
+                labels: [
+                    'Red',
+                    'Blue',
+                    'Yellow'
+                ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>
